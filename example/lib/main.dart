@@ -151,18 +151,18 @@ class _HealthAppState extends State<HealthApp> {
         105, HealthDataType.BLOOD_GLUCOSE, earlier, now);
     success &=
         await health.writeHealthData(1.8, HealthDataType.WATER, earlier, now);
-    success &= await health.writeWorkoutData(
-        HealthWorkoutActivityType.SWIMBIKERUN,
-        now.subtract(Duration(minutes: 15)),
-        now,
-        totalDistance: 2430,
-        totalEnergyBurned: 400);
-    success &= await health.writeWorkoutData(
-        HealthWorkoutActivityType.TRANSITION,
-        now.subtract(Duration(minutes: 15)),
-        now,
-        totalDistance: 2430,
-        totalEnergyBurned: 400);
+    // success &= await health.writeWorkoutData(
+    //     HealthWorkoutActivityType.SWIMBIKERUN,
+    //     now.subtract(Duration(minutes: 15)),
+    //     now,
+    //     totalDistance: 2430,
+    //     totalEnergyBurned: 400);
+    // success &= await health.writeWorkoutData(
+    //     HealthWorkoutActivityType.TRANSITION,
+    //     now.subtract(Duration(minutes: 15)),
+    //     now,
+    //     totalDistance: 2430,
+    //     totalEnergyBurned: 400);
     success &= await health.writeBloodPressure(90, 80, earlier, now);
     success &= await health.writeHealthData(
         0.0, HealthDataType.SLEEP_REM, earlier, now);

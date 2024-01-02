@@ -1097,10 +1097,10 @@ public class SwiftHealthPlugin: NSObject, FlutterPlugin {
             workoutActivityTypeMap["COOLDOWN"] = HKWorkoutActivityType.cooldown
         }
 
-        if #available(iOS 16.0, *) {
-            workoutActivityTypeMap["SWIMBIKERUN"] = .swimBikeRun
-            workoutActivityTypeMap["TRANSITION"] = .transition
-        }
+        // if #available(iOS 16.0, *) {
+        //     workoutActivityTypeMap["SWIMBIKERUN"] = .swimBikeRun
+        //     workoutActivityTypeMap["TRANSITION"] = .transition
+        // }
         
         // Concatenate heart events, headache and health data types (both may be empty)
         allDataTypes = Set(heartRateEventTypes + healthDataTypes)

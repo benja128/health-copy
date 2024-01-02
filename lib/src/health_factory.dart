@@ -737,8 +737,8 @@ class HealthFactory {
       HealthWorkoutActivityType.TAI_CHI,
       HealthWorkoutActivityType.WRESTLING,
       HealthWorkoutActivityType.OTHER,
-      HealthWorkoutActivityType.SWIMBIKERUN,
-      HealthWorkoutActivityType.TRANSITION,
+      // HealthWorkoutActivityType.SWIMBIKERUN,
+      // HealthWorkoutActivityType.TRANSITION,
     }.contains(type);
   }
 
